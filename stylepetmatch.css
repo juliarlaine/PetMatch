@@ -1,0 +1,158 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.orelega-one-regular {
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2eb;
+}
+
+.container {
+    width: 1216px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    height: 140px;
+    background: #f2f2eb;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+header .container {
+    display: flex;
+    flex-direction: line; /* Para alinhar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #693421;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #693421;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: "Orelega One", serif;
+}
+
+.menu a:hover {
+    color: teal;
+}
+
+.btn-cadastro {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Orelega One", serif;
+}
+
+.btn-cadastro:hover {
+    background-color: #005f5f;
+}
+
+/* Main */
+main {
+    padding: 40px 0;
+}
+
+.card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    color: teal;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: teal;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    height: 48px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
