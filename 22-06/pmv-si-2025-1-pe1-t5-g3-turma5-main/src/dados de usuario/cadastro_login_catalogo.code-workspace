@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../cadastro_login_catalogo"
+		},
+		{
+			"path": "../cadastroOng"
+		},
+		{
+			"path": "../cadastroVoluntario"
+		},
+		{
+			"path": "../confirmacaoEmail"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../home definitiva"
+		},
+		{
+			"path": "../pagina protetores"
+		},
+		{
+			"path": "../redefinirSenha"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "cadastro_login_catalogo"
+	}
+}

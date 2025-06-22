@@ -1,0 +1,349 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2eb;
+}
+
+.container {
+    width: 1216px;
+    margin: auto;
+    padding:  20px;
+}
+
+
+header {/* HEADER */
+header {
+  font-family: "Orelega One", serif;
+  width: 100%;
+  background-color: #f2f2eb;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 75px;
+  cursor: pointer;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.menu-links a,
+a.Entrar {
+  color: #693421;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Orelega One", serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a.Entrar {
+  margin-right: 10px;
+}
+
+a.Entrar:hover,
+.menu-links a:hover {
+  color: #54a09a;
+  transform: scale(1.05);
+}
+
+.btn-cadastro {
+  background-color: #54a09a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Orelega One", serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cadastro:hover {
+  background-color: #3c7e7a;
+  transform: scale(1.05);
+}
+  font-family: "Orelega One", serif;
+  background-color: #f2f2eb;
+  border-bottom: 1px solid #ccc;
+}
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  height: 75px;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu-links {
+  display: flex;
+  gap: 30px;
+}
+.menu-links a, .Entrar {
+  color: #693421;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Orelega One", serif;
+}
+.btn-cadastro {
+  background-color: #54a09a;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  top: 25px;
+  left: 0;
+  border-radius: 5px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+main.split {
+  display: flex;
+  flex: 1;
+}
+
+
+.imagem {
+  width: 50%;
+}
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.form-container {
+  width: 50%;
+  padding: 40px;
+  background-color: #f2f2eb;
+  margin-right: 247px;
+}
+.form-ong {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-ong h1 {
+  grid-column: span 2;
+  font-family: "Orelega One", serif;
+  font-size: 26px;
+  color: #32928d;
+}
+.sub {
+  grid-column: span 2;
+  font-size: 14px;
+  color: #888;
+}
+.form-esquerda, .form-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+  height: 38px;
+  align-items: center;
+}
+.form-submit {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  background-color: #54a09a;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+    height: 48px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.cadastro-titulo-form {
+  text-align: center;
+}
+
+.sub {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1333px) {
+  .imagem {
+    display: none;
+  }
+  .form-container {
+    width: 100%;
+    margin-right: 0px
+  }
+}
+
+/* TESTE */
+
+.file-upload-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+#fotoVoluntarioInput {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.file-upload-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.upload-icon {
+  font-size: 50px;
+  font-weight: 300;
+  color: #aaa;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#imagePreview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: none;
+  z-index: 5;
+}
+
+.remove-image-button {
+  position: absolute;
+  top: 8px; 
+  right: 8px; 
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%; 
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  line-height: 28px; 
+  text-align: center;
+  cursor: pointer;
+  display: none; 
+  z-index: 15; 
+  font-weight: bold;
+  padding: 0;
+}
+
+.remove-image-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

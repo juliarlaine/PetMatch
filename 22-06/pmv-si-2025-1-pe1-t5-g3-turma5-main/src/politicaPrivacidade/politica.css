@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+  background-color: #f2f2eb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* HEADER padrão do projeto */
+header {
+  width: 100%;
+  background-color: #f2f2eb;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 75px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.menu-links a,
+.btn-entrar,
+.btn-cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  line-height: 1;
+  padding: 0 16px;
+  border: none;
+  font-size: 18px;
+  font-family: "Orelega One", serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #693421;
+}
+
+.btn-entrar:hover {
+  color: #54a09a;
+  transform: scale(1.05);
+}
+
+.btn-cadastro {
+  background-color: #54a09a;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cadastro:hover {
+  background-color: #3c7e7a;
+  transform: scale(1.05);
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #693421;
+  font-family: "Orelega One", serif;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0eee6;
+}
+
+/* PRINCIPAL */
+.container {
+  max-width: 1216px;
+  margin: 40px auto;
+  padding: 68px;
+}
+
+.container h1 {
+  font-size: 36px;
+  color: #32928d;
+  font-family: "Orelega One", serif;
+  margin-bottom: 32px;
+}
+
+.container h2 {
+  font-size: 20px;
+  color: #693421;
+  margin-top: 28px;
+}
+
+.container p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.container ul {
+  margin: 12px 0 24px 20px;
+  padding-left: 20px;
+}
+
+.container li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  height: 48px;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+footer a {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - PetMatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .menu-link-active {
+      color: #888 !important;
+      cursor: default !important;
+      text-decoration: none !important;
+      pointer-events: none;
+    }
+    .menu-link-active:hover {
+      color: #888 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <img src="pexels-ivan-samkov-6291579.png" alt="Cachorro para adoção" />
+  </div>
+  
+  <header>    <div class="header-container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 3 1.png" alt="PetMatch" />
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="catalogo.html">Quero adotar</a>
+          <div class="dropdown">
+  <a href="#" class="menu-link">Quero ajudar</a>
+  <div class="dropdown-content">
+    <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+    <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+  </div>
+</div>
+
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../pagina protetores/protetores.html">Protetores</a>
+        </div>
+        <a class="Entrar" href="login.html">Entrar</a>
+        <button class="btn-cadastro menu-link-active">Cadastre-se</button>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="formulario-container">
+    <form class="formulario">
+      <a href="../home definitiva/home.html">
+        <img class="login-logo" src="LOGO 3 1.png" alt="Logo PetMatch" />
+      </a>
+
+      <h1>Crie sua conta</h1>
+
+      <label>Nome
+        <input type="text" placeholder="Nome completo" />
+      </label>
+
+      <label>Telefone
+        <input type="tel" placeholder="(13) 99999-9999" />
+      </label>
+
+      <label>E-mail
+        <input type="email" placeholder="Digite seu e-mail" />
+      </label>
+
+      <label>Senha
+        <input type="password" placeholder="Digite sua senha" />
+      </label>
+
+      <label>Confirmar senha
+        <input type="password" placeholder="Confirme sua senha" />
+      </label>
+
+      <label>Idade
+        <input type="number" placeholder="Sua idade" />
+      </label>
+
+      <label>Foto de perfil
+        <input type="file" />
+      </label>
+
+      <button type="submit">Continuar</button>
+      <a href="#" class="voltar-home">Voltar para home</a>
+    </form>
+  </main>
+
+<script src="scripit.js"></script>
+<script src="../active-menu.js"></script>
+</body>
+</html>

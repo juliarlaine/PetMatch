@@ -1,0 +1,11 @@
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-primary);
+    color: var(--color-text);
+  }
+  
+  .btn-cadastro {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+  

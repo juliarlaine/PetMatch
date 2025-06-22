@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Pets – PetMatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">  <link rel="stylesheet" href="index.css"/>
+  <style>
+    .menu-link-active {
+      color: #888 !important;
+      cursor: default !important;
+      text-decoration: none !important;
+      pointer-events: none;
+    }
+    .menu-link-active:hover {
+      color: #888 !important;
+    }
+    .formulario .section {
+      grid-column: span 2;
+      margin-top: 24px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+    .formulario .section h2 {
+      font-size: 20px;
+      font-family: "Orelega One", serif;
+      color: #48221a;
+      margin: 0;
+    }
+    .formulario label {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      color: #522f27;
+    }
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+      padding: 10px;
+      border: 1px solid #939393;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .formulario button {
+      grid-column: span 2;
+      justify-self: center;
+      background-color: #54a09a;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-family: "Orelega One", serif;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .formulario button:hover {
+      background-color: #3c7e7a;
+    }
+    .voltar-home {
+      grid-column: span 2;
+      text-align: center;
+      color: #522f27;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .background {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 100%;
+      height: 160%;
+      transform: translateY(-40%);
+      z-index: -20;
+      overflow: hidden;
+    }
+    .background img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.;
+      filter: blur(1px);
+    }
+    .formulario-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+    .formulario {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .login-logo {
+      display: block;
+      margin: 0 0 20px auto;
+      transform: translateX(165px);
+      height: 75px;
+    }
+    .formulario label > div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .formulario input[type="radio"],
+    .formulario input[type="checkbox"] {
+      margin: 0;
+    }
+    .formulario label.termos {
+      grid-column: span 2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <img src="petsimagemfundo (Story).png" alt="Cachorro para adoção"/>
+  </div>
+
+  <header>    <div class="header-container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 3 1.png" alt="PetMatch"/>
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="catalogo.html">Quero adotar</a>
+          <div class="dropdown">
+  <a href="#" class="menu-link">Quero ajudar</a>
+  <div class="dropdown-content">    <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+    <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>  </div>
+</div>
+
+        <a href="../blog/blog.html" class="menu-link">Blog</a>
+        <a href="../pagina protetores/protetores.html" class="menu-link-active">Protetores</a>
+        </div>
+        <a class="Entrar" href="login.html">Entrar</a>
+        <button class="btn-cadastro" onclick="location.href='cadastro.html'">
+          Cadastre-se
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="formulario-container">
+    <form id="petForm" class="formulario">
+      <a href="../home definitiva/home.html">
+        <img class="login-logo" src="LOGO 3 1.png" alt="Logo PetMatch"/>
+      </a>
+      <h1>Cadastro de Pet</h1>
+
+      <!-- Seção: Informações Básicas -->
+      <div class="section"><h2>Informações Básicas</h2></div>
+      <label>Nome
+        <input type="text" id="nomePet" placeholder="Nome do pet" required/>
+      </label>
+      <label>Espécie
+        <select id="especiePet" required>
+          <option value="">Selecione</option>
+          <option value="Cachorro">Cachorro</option>
+          <option value="Gato">Gato</option>
+        </select>
+      </label>
+      <label>Idade (anos)
+        <input type="number" id="idadePet" placeholder="Ex: 3" min="0" required/>
+      </label>
+      <label>Localização
+        <input type="text" id="localizacaoPet" placeholder="Cidade / Estado" required/>
+      </label>
+      <label>Contato
+        <input type="tel" id="contatoPet" placeholder="(xx) 9xxxx-xxxx" required/>
+      </label>
+      <label>Sexo
+        <div>
+          <label><input type="radio" name="sexoPet" value="Macho" required/> Macho</label>
+          <label><input type="radio" name="sexoPet" value="Fêmea"/> Fêmea</label>
+        </div>
+      </label>
+      <label>Castrado?
+        <div>
+          <label><input type="radio" name="castradoPet" value="Sim" required/> Sim</label>
+          <label><input type="radio" name="castradoPet" value="Não"/> Não</label>
+        </div>
+      </label>
+
+      <!-- Seção: Saúde & Compatibilidade -->
+      <div class="section"><h2>Saúde & Compatibilidade</h2></div>
+      <label>Histórico de vacinação
+        <textarea id="vacinasPet" rows="3" placeholder="Vacinas e datas" required></textarea>
+      </label>
+      <label>Nível de energia
+        <select id="nivelEnergiaPet" required>
+          <option value="">Selecione</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
+        </select>
+      </label>
+      <label>Convive bem com crianças?
+        <div>
+          <label><input type="radio" name="conviveCriancas" value="Sim" required/> Sim</label>
+          <label><input type="radio" name="conviveCriancas" value="Não"/> Não</label>
+        </div>
+      </label>
+      <label>Convive bem com outros animais?
+        <div>
+          <label><input type="radio" name="conviveAnimais" value="Sim" required/> Sim</label>
+          <label><input type="radio" name="conviveAnimais" value="Não"/> Não</label>
+        </div>
+      </label>
+
+      <!-- Seção: Comportamento -->
+      <div class="section"><h2>Comportamento</h2></div>
+      <label>Descrição do comportamento
+        <textarea id="comportamentoPet" rows="2" placeholder="Ex: calmo, brincalhão..." required></textarea>
+      </label>
+      <label>Foto do animal
+        <input type="file" id="fotoPet" accept="image/*" required/>
+      </label>
+      <label>Observações
+        <textarea id="observacoesPet" rows="3" placeholder="Algo mais a acrescentar?"></textarea>
+      </label>
+
+      <!-- Termos e botões -->
+      <label class="termos">
+        <input type="checkbox" id="termosPet" required/>
+        Li e concordo com a <a href="termos.html" target="_blank">Política de Privacidade e Termos</a>
+      </label>
+
+      <button type="submit">Salvar Pet</button>
+      <a href="dashboard.html" class="voltar-home">Voltar</a>
+    </form>
+  </main>
+  <script src="pet.js"></script>
+  <script src="../active-menu.js"></script>
+</body>
+</html>
+
+

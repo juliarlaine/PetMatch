@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Pets – PetMatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"/>
+  <style>
+    
+    .formulario .section {
+      grid-column: span 2;
+      margin-top: 24px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+    .formulario .section h2 {
+      font-size: 20px;
+      font-family: "Orelega One", serif;
+      color: #48221a;
+      margin: 0;
+    }
+    
+    .formulario label {
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <img src="petsimagemfundo (Story).png" alt="Cachorro para adoção"/>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="LOGO 3 1.png" alt="PetMatch"/>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="#">Quero adotar</a>
+          <a href="#">Quero ajudar</a>
+          <a href="#">Blog</a>
+          <a href="#">Protetores</a>
+        </div>
+        <a class="Entrar" href="login.html">Entrar</a>
+        <button class="btn-cadastro" onclick="location.href='cadastro.html'">
+          Cadastre-se
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="formulario-container">
+    <form id="petForm" class="formulario">
+      <img class="login-logo" src="LOGO 3 1.png" alt="Logo PetMatch"/>
+      <h1>Cadastro de Pet</h1>
+
+      <!-- Seção: Informações Básicas -->
+      <div class="section"><h2>Informações Básicas</h2></div>
+      <label>Nome
+        <input type="text" id="nomePet" placeholder="Nome do pet"/>
+      </label>
+      <label>Espécie
+        <input type="text" id="especiePet" placeholder="Ex: Cachorro, Gato..."/>
+      </label>
+      <label>Idade (anos)
+        <input type="number" id="idadePet" placeholder="Ex: 3"/>
+      </label>
+      <label>Localização
+        <input type="text" id="localizacaoPet" placeholder="Cidade / Estado"/>
+      </label>
+      <label>Sexo
+        <div>
+          <label><input type="radio" name="sexoPet" value="Macho"/> Macho</label>
+          <label><input type="radio" name="sexoPet" value="Fêmea"/> Fêmea</label>
+        </div>
+      </label>
+      <label>Castrado?
+        <div>
+          <label><input type="radio" name="castradoPet" value="Sim"/> Sim</label>
+          <label><input type="radio" name="castradoPet" value="Não"/> Não</label>
+        </div>
+      </label>
+
+      <!-- Seção: Saúde & Compatibilidade -->
+      <div class="section"><h2>Saúde & Compatibilidade</h2></div>
+      <label>Histórico de vacinação
+        <textarea id="vacinasPet" rows="3" placeholder="Vacinas e datas"></textarea>
+      </label>
+      <label>Nível de energia
+        <select id="nivelEnergiaPet">
+          <option value="">Selecione</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
+        </select>
+      </label>
+      <label>Convive bem com crianças?
+        <div>
+          <label><input type="radio" name="conviveCriancas" value="Sim"/> Sim</label>
+          <label><input type="radio" name="conviveCriancas" value="Não"/> Não</label>
+        </div>
+      </label>
+      <label>Convive bem com outros animais?
+        <div>
+          <label><input type="radio" name="conviveAnimais" value="Sim"/> Sim</label>
+          <label><input type="radio" name="conviveAnimais" value="Não"/> Não</label>
+        </div>
+      </label>
+
+      <!-- Seção: Comportamento -->
+      <div class="section"><h2>Comportamento</h2></div>
+      <label>Descrição do comportamento
+        <textarea id="comportamentoPet" rows="2" placeholder="Ex: calmo, brincalhão..."></textarea>
+      </label>
+      <label>Foto do animal
+        <input type="file" id="fotoPet" accept="image/*"/>
+      </label>
+      <label>Observações
+        <textarea id="observacoesPet" rows="3" placeholder="Algo mais a acrescentar?"></textarea>
+      </label>
+
+      <!-- Termos e botões -->
+      <label class="termos">
+        <input type="checkbox" id="termosPet"/>
+        Li e concordo com a <a href="termos.html" target="_blank">Política de Privacidade e Termos</a>
+      </label>
+
+      <button type="submit">Salvar Pet</button>
+      <a href="dashboard.html" class="voltar-home">Voltar</a>
+    </form>
+  </main>
+
+  <script src="pet.js"></script>
+</body>
+</html>
+
+

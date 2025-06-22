@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalhes do Pet – PetMatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="catalogo.css"/>
+  <link rel="stylesheet" href="detalhes.css"/>
+
+  <style>
+    /* cabeçalho herdado de catalogo.css */
+
+    /* container geral */
+    .detalhes-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* layout: imagem ao lado das informações */
+    .detalhes-content {
+      display: flex;
+      gap: 24px;
+      padding: 24px;
+      flex-wrap: wrap;
+    }
+
+    .detalhes-img {
+      flex: 1 1 300px;
+    }
+
+    .detalhes-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .detalhes-info {
+      flex: 2 1 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Assistant', sans-serif;
+    }
+
+    .detalhes-info h1 {
+      font-family: "Orelega One", serif;
+      color: #48221a;
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+
+    .detalhes-info p {
+      margin-bottom: 12px;
+      color: #522f27;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    /* container para centralizar o botão de voltar */
+    .voltar-container {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .voltar {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: #54a09a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .voltar:hover {
+      background-color: #3c7e7a;
+    }
+
+    @media (max-width: 768px) {
+      .detalhes-content {
+        flex-direction: column;
+      }
+      .detalhes-img,
+      .detalhes-info {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 3 1.png" alt="PetMatch"/>
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="../cadastro_login_catalogo/catalogo.html" class="menu-link-active">Quero adotar</a>
+          <div class="dropdown">
+            <a href="#" class="menu-link">Quero ajudar</a>
+            <div class="dropdown-content">
+              <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+              <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+            </div>
+          </div>
+          <a href="../blog/blog.html" class="menu-link">Blog</a>
+          <a href="../pagina protetores/protetores.html" class="menu-link">Protetores</a>
+        </div>
+        <div class="menu-usuario">
+          <!-- preenchido por active-menu.js -->
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="detalhes-container">
+    <div class="detalhes-content">
+      <div class="detalhes-img">
+        <img id="petImage" src="" alt="Foto do Pet"/>
+      </div>
+      <div class="detalhes-info">
+        <h1 id="petName">Nome do Pet</h1>
+        <p><strong>Espécie:</strong> <span id="petEspecie"></span></p>
+        <p><strong>Idade:</strong> <span id="petIdade"></span> anos</p>
+        <p><strong>Localização:</strong> <span id="petLocalizacao"></span></p>
+        <p><strong>Contato:</strong> <span id="petContato"></span></p>
+        <p><strong>Sexo:</strong> <span id="petSexo"></span></p>
+        <p><strong>Castrado:</strong> <span id="petCastrado"></span></p>
+        <p><strong>Vacinas:</strong> <span id="petVacinas"></span></p>
+        <p><strong>Energia:</strong> <span id="petEnergia"></span></p>
+        <p><strong>Convive com Crianças:</strong> <span id="petCriancas"></span></p>
+        <p><strong>Convive com Animais:</strong> <span id="petAnimais"></span></p>
+        <p><strong>Comportamento:</strong> <span id="petComportamento"></span></p>
+        <p><strong>Observações:</strong> <span id="petObservacoes"></span></p>
+      </div>
+    </div>
+
+    <div class="voltar-container">
+      <a class="voltar" href="catalogo.html">&larr; Voltar ao catálogo</a>
+    </div>
+  </div>
+
+  <script src="pet-detalhes.js"></script>
+  <script src="../active-menu.js"></script>
+</body>
+</html>
+
+

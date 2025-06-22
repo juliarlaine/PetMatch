@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetMatch - Adote com amor</title>    <!-- Estilos globais -->
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- Fonte personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet" />
+
+    <style>
+      .menu-link-active {
+        color: #888 !important;
+        cursor: default !important;
+        text-decoration: none !important;
+        pointer-events: none;
+      }
+      .menu-link-active:hover {
+        color: #888 !important;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        background: none;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      menu, ol, ul {
+        list-style: none;
+      }
+
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 240px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Cabeçalho principal do PetMatch -->
+    <header>      <div class="header-container">
+        <div class="logo">
+          <a href="home.html">
+            <img src="LOGO 3 1.png" alt="PetMatch" />
+          </a>
+        </div>
+        <nav class="menu">
+          <div class="menu-links">
+            <a href="../cadastro_login_catalogo/catalogo.html">Quero adotar</a>
+            <div class="dropdown">
+  <a href="#" class="menu-link">Quero ajudar</a>
+  <div class="dropdown-content">
+    <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+    <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+  </div>
+</div>
+
+            <a href="../blog/blog.html">Blog</a>
+            <a href="../pagina protetores/protetores.html">Protetores</a>
+
+          </div>
+          <a class="btn-entrar" href="../cadastro_login_catalogo/login.html">Entrar</a>
+          <button class="btn-cadastro" onclick="location.href='../cadastro_login_catalogo/cadastro.html'">
+            Cadastre-se
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="homepage">
+      <section class="container">
+        <!-- Banner principal -->
+<div class="banner">
+  <img src="pexels-lum-3-n-44775-4060140.png" class="banner-img" alt="Banner">
+    <h2 class="banner-text">Faça a diferença sem sair de casa!</h2>
+  </div>        <!-- Botões de ação principais -->
+        <div class="botoes-acao">
+          <button class="btn-verde" onclick="location.href='../cadastro_login_catalogo/catalogo.html'">Quero adotar</button>
+          <button class="btn-claro" onclick="location.href='../cadastro_login_catalogo/cadastro-pets.html'">Quero divulgar um animal</button>
+        </div>
+
+        <!-- Chamada para adoção -->
+        <section class="chamada">
+          <h1>Tem um amigo esperando por você!</h1>
+          <p>
+            Novos cães e gatos foram resgatados e estão prontos para encontrar um lar cheio de carinho.<br />
+            Escolha adotar. Acesse e mude uma vida! 🐾💛
+          </p>
+        </section>
+
+        <!-- Cards de animais -->
+        <section class="cards-pets">
+          <!-- Card de exemplo -->
+          <div class="card-pet">
+            <img src="gato-adocao-petlove-80.png" alt="Pet para adoção" class="pet-img" />
+            <div class="info-pet">
+              <h3 class="nome-pet">Beatriz</h3>
+              <p class="cidade-pet">São Paulo, SP</p>
+              <div class="icons-pet">
+                <img src="favorite-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Favorito" />
+                <img src="female-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Fêmea" />
+              </div>
+              <button class="btn-adotar">Quero adotar</button>
+            </div>
+          </div>
+
+          <div class="card-pet">
+            <img src="gato-adocao-petlove-80.png" alt="Pet para adoção" class="pet-img" />
+            <div class="info-pet">
+              <h3 class="nome-pet">Bob</h3>
+              <p class="cidade-pet">São Paulo, SP</p>
+              <div class="icons-pet">
+                <img src="favorite-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Favorito" />
+                <img src="female-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Fêmea" />
+              </div>
+              <button class="btn-adotar">Quero adotar</button>
+            </div>
+          </div>
+
+          <div class="card-pet">
+            <img src="gato-adocao-petlove-80.png" alt="Pet para adoção" class="pet-img" />
+            <div class="info-pet">
+              <h3 class="nome-pet">Beatriz</h3>
+              <p class="cidade-pet">São Paulo, SP</p>
+              <div class="icons-pet">
+                <img src="favorite-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Favorito" />
+                <img src="female-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Fêmea" />
+              </div>
+              <button class="btn-adotar">Quero adotar</button>
+            </div>
+          </div>
+
+          <div class="card-pet">
+            <img src="gato-adocao-petlove-80.png" alt="Pet para adoção" class="pet-img" />
+            <div class="info-pet">
+              <h3 class="nome-pet">Beatriz</h3>
+              <p class="cidade-pet">São Paulo, SP</p>
+              <div class="icons-pet">
+                <img src="favorite-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Favorito" />
+                <img src="female-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-80.svg" alt="Fêmea" />
+              </div>
+              <button class="btn-adotar">Quero adotar</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Ver mais -->
+      <div class="ver-mais-container">
+        <button class="btn-ver-mais">Ver mais</button>
+      </div>
+
+      <!-- Por que adotar -->
+      <section class="secao-motivos">
+        <h2 class="titulo-secao">Por que adotar?</h2>
+        <div class="motivos">
+          <div class="motivo">
+            <img src="open-doodles-doggie0.png" alt="Ilustração 1" />
+            <p>Agora mesmo, milhares de cãezinhos e gatinhos sonham com um lar e alguém para amar.</p>
+          </div>
+          <div class="motivo">
+            <img src="open-doodles-playing0.png" alt="Ilustração 2" />
+            <p>A alegria de ver um bichinho florescer, cheio de vida e felicidade, após receber amor e cuidados.</p>
+          </div>
+          <div class="motivo">
+            <img src="stuck-at-home-pet-dog-10.png" alt="Ilustração 3" />
+            <p>Se você pode mudar o destino de um animal de rua, por que não faria isso?</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Match ideal -->
+      <section class="match-final">
+        <h2>Seu match ideal!</h2>
+      </section>      <!-- Rodapé -->
+      <footer class="rodape">
+        <p><a href="#">Sobre</a> | <a href="#">Política de Privacidade</a></p>
+      </footer>    </main>    <script>
+      // Adiciona funcionalidade aos botões "Quero adotar" dos cards
+      document.addEventListener('DOMContentLoaded', function() {
+        const botoesAdotar = document.querySelectorAll('.btn-adotar');
+        botoesAdotar.forEach(botao => {
+          botao.addEventListener('click', function() {
+            window.location.href = '../cadastro_login_catalogo/catalogo.html';
+          });
+        });
+
+        // Adiciona funcionalidade ao botão "Ver mais"
+        const botaoVerMais = document.querySelector('.btn-ver-mais');
+        if (botaoVerMais) {
+          botaoVerMais.addEventListener('click', function() {
+            window.location.href = '../cadastro_login_catalogo/catalogo.html';
+          });
+        }
+      });
+    </script>
+    <script src="../active-menu.js"></script>
+  </body>
+</html>

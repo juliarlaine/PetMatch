@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dadosusuario.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetMatch - Dashboard</title>
+  <style>
+    .menu-link-active {
+      color: #888 !important;
+      cursor: default !important;
+      text-decoration: none !important;
+      pointer-events: none;
+    }
+    .menu-link-active:hover {
+      color: #888 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 3 1.png" alt="PetMatch"/>
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="../cadastro_login_catalogo/catalogo.html">Quero adotar</a>
+          <div class="dropdown">
+            <a href="#" class="menu-link">Quero ajudar</a>
+            <div class="dropdown-content">
+              <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+              <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+            </div>
+          </div>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../pagina protetores/protetores.html">Protetores</a>
+
+        </div>
+        <div class="menu-usuario">
+          <span id="nomeUsuario" class="nome-usuario">Olá, Usuário!</span>
+          <button class="btn-sair" onclick="location.href='../home definitiva/usuariologado.html'">Voltar</button>
+          <button class="btn-sair" onclick="logout()">Sair</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main class="main-container">
+  <!-- Seção do formulário -->
+  <section class="form-section">
+    <div class="user-form">
+      <h3>Meus dados</h3>
+      <form>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Nome completo">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seunome@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" placeholder="(13) 99999-9999">
+          </div>
+          <div class="form-group">
+            <label for="foto">Foto de perfil</label>
+            <input type="file" id="foto">
+          </div>
+          <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="text" id="idade" placeholder="25 anos">
+          </div>
+        </div>
+        <button type="submit" class="confirmar">Confirmar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Seção de cards -->
+  <section class="favorites-section">
+    <h2>Seus amiguinhos favoritos estão aqui:</h2>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="pet-card">
+        <div class="pet-image">
+          <img src="download-140.png" alt="Beatriz">
+        </div>
+        <div class="pet-icons">
+          <img class="icon gender" src="female-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-40.svg" alt="Fêmea">
+          <img class="icon favorite" src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 16.png" alt="Favorito">
+        </div>
+        <div class="pet-info">
+          <div class="pet-name">Beatriz</div>
+          <div class="pet-location">São Paulo, SP</div>
+        </div>
+        <button class="adopt-button">Quero adotar</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="pet-card">
+        <div class="pet-image">
+          <img src="download-150.png" alt="Fred">
+        </div>
+        <div class="pet-icons">
+          <img class="icon gender" src="male-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-90.svg" alt="Macho">
+          <img class="icon favorite" src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 16.png" alt="Favorito">
+        </div>
+        <div class="pet-info">
+          <div class="pet-name">Fred</div>
+          <div class="pet-location">Bauru, SP</div>
+        </div>
+        <button class="adopt-button">Quero adotar</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="pet-card">
+        <div class="pet-image">
+          <img src="download-150.png" alt="Caramelo">
+        </div>
+        <div class="pet-icons">
+          <img class="icon gender" src="male-24-dp-e-3-e-3-e-3-fill-0-wght-400-grad-0-opsz-24-90.svg" alt="Macho">
+          <img class="icon favorite" src="favorite_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 16.png" alt="Favorito">
+        </div>
+        <div class="pet-info">
+          <div class="pet-name">Caramelo</div>
+          <div class="pet-location">Ouro Preto, MG</div>
+        </div>
+        <button class="adopt-button">Quero adotar</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#">Sobre</a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+<script src="dadosusuario.js"></script>
+<script>
+  function logout() {
+    localStorage.removeItem("usuarioLogado");
+    alert("Você saiu com sucesso!");
+    window.location.href = '../cadastro_login_catalogo/login.html';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../cadastro_login_catalogo"
+		},
+		{
+			"path": "../cadastroOng"
+		},
+		{
+			"path": "../cadastroVoluntario"
+		},
+		{
+			"path": "../confirmacaoEmail"
+		},
+		{
+			"path": "../dados de usuario"
+		},
+		{
+			"path": "../home definitiva"
+		},
+		{
+			"path": "../pagina protetores"
+		},
+		{
+			"path": "../redefinirSenha"
+		}
+	]
+}

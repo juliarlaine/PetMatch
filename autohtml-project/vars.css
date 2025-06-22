@@ -1,0 +1,25 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --d9d9d9: #3ea6c2;
+  --d9d9d9: #d1dbbf;
+  --d9d9d9: #c9d3e0;
+  --d9d9d9: #c4b2c3;
+  --f0eee6: #f0eee6;
+  --d9d9d9: #ccb24f;
+  --d9d9d9: #48221a;
+
+  /* Fonts */
+  --menu-font-family: OrelegaOne-Regular, sans-serif;
+  --menu-font-size: 12px;
+  --menu-line-height: normal;
+  --menu-font-weight: 400;
+  --menu-font-style: normal;
+  --corpo-font-family: Outfit-Regular, sans-serif;
+  --corpo-font-size: 24px;
+  --corpo-line-height: normal;
+  --corpo-font-weight: 400;
+  --corpo-font-style: normal;
+
+  /* Effects */
+}

@@ -1,0 +1,8 @@
+<svg width="248" height="202" viewBox="0 0 248 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="248" height="202" rx="10" fill="white"/>
+<rect x="0.5" y="0.5" width="247" height="201" rx="9.5" stroke="#522F27" stroke-opacity="0.2"/>
+<line y1="-0.5" x2="248.002" y2="-0.5" transform="matrix(0.999993 -0.00384203 0.00320438 0.999995 0 43.8302)" stroke="black" stroke-opacity="0.2"/>
+<line y1="-0.5" x2="248.002" y2="-0.5" transform="matrix(0.999993 -0.00384203 0.00320438 0.999995 0 83.8491)" stroke="black" stroke-opacity="0.2"/>
+<line y1="-0.5" x2="248.002" y2="-0.5" transform="matrix(0.999993 -0.00384203 0.00320438 0.999995 0 128.632)" stroke="black" stroke-opacity="0.2"/>
+<line y1="-0.5" x2="248.002" y2="-0.5" transform="matrix(0.999993 -0.00384203 0.00320438 0.999995 0 172.462)" stroke="black" stroke-opacity="0.2"/>
+</svg>

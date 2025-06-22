@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        .menu-link-active {
+            color: #888 !important;
+            cursor: default !important;
+            text-decoration: none !important;
+            pointer-events: none;
+        }
+        .menu-link-active:hover {
+            color: #888 !important;
+        }
+    </style>
+</head>
+<body>
+  <header>    <div class="header-container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 3 1.png" alt="PetMatch"/>
+        </a>
+      </div>      <nav class="menu">
+        <div class="menu-links">
+          
+          <a href="../cadastro_login_catalogo/catalogo.html" class="menu-link">Quero adotar</a>
+          <div class="dropdown">
+  <a href="#" class="menu-link">Quero ajudar</a>
+  <div class="dropdown-content">
+    <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+    <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>  </div>
+</div>
+          <a href="../blog/blog.html" class="menu-link-active">Blog</a>
+          <a href="../pagina protetores/protetores.html" class="menu-link">Protetores</a>
+        </div>
+        <a class="Entrar" href="../cadastro_login_catalogo/login.html">Entrar</a>
+        <button class="btn-cadastro" onclick="location.href='../cadastro_login_catalogo/cadastro.html'">
+          Cadastre-se
+        </button>
+      </nav>
+    </div>
+  </header>
+
+<main>
+    <div class="container">
+        <div class="card">
+            <img src="gatinho blog.jpg" alt="Gato para adoção" class="card-img">
+            <div class="card-content">
+                <h2>Feira de Adoção</h2>
+                <p class="card-info">30/03/2025 | Belo Horizonte</p>
+                <p class="card-text" id="texto">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    <span id="pontos">...</span>
+                    <span id="maisTexto" style="display: none;">
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus repellendus dicta tenetur, atque impedit aliquid perferendis, aspernatur porro dolore modi, quis obcaecati animi quo mollitia maiores reprehenderit a exercitationem consequatur. Unde eligendi officiis repellat consequuntur iusto fugit earum, temporibus error officia minus. Enim delectus at earum, nemo perspiciatis dignissimos iste!
+                    </span>
+                </p>
+                <a href="#" class="read-more" onclick="expandirTexto(event)">Continue lendo...</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#">Sobre</a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+<script src="continue lendo.js"></script>
+<script src="../active-menu.js"></script>
+</body>
+</html>

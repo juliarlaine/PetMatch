@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de ONG - PetMatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cadastroong.css" />
+  <style>
+    .menu-link-active {
+      color: #888 !important;
+      cursor: default !important;
+      text-decoration: none !important;
+      pointer-events: none;
+    }
+    .menu-link-active:hover {
+      color: #888 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 4 (1).png" alt="PetMatch" />
+        </a>
+      </div>
+      <nav class="menu">
+        <div class="menu-links">
+          <a href="../cadastro_login_catalogo/catalogo.html">Quero adotar</a>
+          <div class="dropdown">
+            <a href="#">Quero ajudar</a>
+            <div class="dropdown-content">
+              <a href="../cadastroOng/cadastroong.html" class="menu-link-active">Cadastrar uma Ong</a>
+              <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+            </div>
+          </div>
+          <a href="../blog/blog.html">Blog</a>
+          <a href="../pagina protetores/protetores.html">Protetores</a>
+
+        </div>
+        <a class="Entrar" href="../cadastro_login_catalogo/login.html">Entrar</a>
+        <a class="btn-cadastro" href="../cadastro_login_catalogo/cadastro.html">Cadastre-se</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="split">
+    <div class="imagem">
+      <img src="fundo-ong.jpg" alt="Cachorros no fundo">
+    </div>
+    <div class="form-container">
+      <form class="form-ong">
+        <div>
+
+        </div>
+        <h1 class="cadastro-titulo-form">Cadastre sua ONG</h1>
+        <p class="sub">Informações obrigatórias*</p>
+        <div class="form-esquerda">
+          <label>Nome da instituição*</label>
+          <input type="text"  placeholder="Ong Petmatch" />
+          <label>Email*</label>
+          <input type="email" placeholder="exemplo@gmail.com" />
+          <label>Telefone*</label>
+          <input type="tel" placeholder="((13) 9999-9999 )" />
+          <label>CEP*</label>
+          <input type="text" placeholder="11111-111" />
+          <label>Endereço*</label>
+          <input type="text" placeholder="Rua da Liberadde" />
+          <label>CNPJ*</label>
+          <input type="text" id="cnpjInput" maxlength="18" placeholder="00.000.000/0000-00" />
+          <label>Cidade / Estado*</label>
+          <input type="text" placeholder="Santos-Sp" />
+         
+
+          <label>Foto da ONG</label>
+          <div class="file-upload-container">
+            <input type="file" id="fotoOngInput" name="fotoVoluntario" accept="image/*" />
+            <div class="file-upload-visual">
+              <span class="upload-icon">+</span>
+            </div>
+            <img id="imagePreview" src="#" alt="Prévia da imagem" />
+            <button type="button" id="removeImageButton" class="remove-image-button" title="Remover imagem">×</button>
+          </div>
+        </div>
+
+        <div class="form-direita">
+          <label>Busca por pessoas para voluntariado ?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="voluntario"> SIM</label>
+            <label><input type="radio" name="voluntario"> NÃO</label>
+          </div>
+
+          <label>A ONG está legalmente registrada?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="registrada"> SIM</label>
+            <label><input type="radio" name="registrada"> NÃO</label>
+          </div>
+
+          <label>Qual a missão da ONG?</label>
+          <input type="text" placeholder="A nossa missão ..." />
+
+          <label>Responsável Legal</label>
+          <input type="text" placeholder="Nome completo" />
+
+          <label>Telefone do Responsável Legal</label>
+          <input type="tel" placeholder="Telefone: (13) 91234-6678" />
+
+          <label>Privacidade & Termos</label>
+          <textarea rows="5"
+            readonly>**Política de Privacidade e Termos de Uso – PetMatch**
+
+Ao se cadastrar, você concorda com esta Política e Termos. A PetMatch, controladora dos seus dados, compromete-se com sua privacidade e a proteção de seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD).
+
+**1. Coleta e Uso de Dados:**
+Coletamos os dados fornecidos por você (Nome, Email, Telefone, CPF, Endereço, informações da ONG/voluntário, foto do voluntário) para as seguintes finalidades:
+    a. Viabilizar seu cadastro e identificação na plataforma PetMatch.
+    b. Permitir a conexão entre ONGs, voluntários e potenciais adotantes.
+    c. Gerenciar sua conta e fornecer suporte.
+    d. Comunicar informações relevantes sobre a plataforma, adoções ou oportunidades de voluntariado.
+    e. Cumprir obrigações legais e regulatórias.
+    f. Realizar análises estatísticas para melhoria da plataforma (dados anonimizados sempre que possível).
+
+A foto do voluntário será utilizada para identificação e para ser apresentada às ONGs com as quais você demonstrar interesse em colaborar, mediante sua ação na plataforma.
+
+**2. Base Legal para Tratamento:**
+O tratamento dos seus dados é realizado com base no seu consentimento (ao aceitar estes termos e se cadastrar), para execução de contrato (disponibilização dos serviços da plataforma) e, em certos casos, para cumprimento de obrigação legal ou regulatória e legítimo interesse do controlador.
+
+**3. Compartilhamento de Dados:**
+Seus dados poderão ser compartilhados:
+    a. Publicamente (para ONGs): Nome da ONG, cidade, missão, necessidades (para facilitar a conexão com o público).
+    b. Com outras ONGs/Voluntários (conforme sua interação na plataforma): Dados de contato e perfil para viabilizar a colaboração/adoção.
+    c. Com autoridades judiciais, administrativas ou governamentais competentes, sempre que houver determinação legal.
+    d. Com provedores de serviços terceirizados (hospedagem, e-mail marketing), que tratarão os dados seguindo nossas instruções e a LGPD.
+Não vendemos seus dados pessoais.
+
+**4. Seus Direitos (LGPD):**
+Você tem o direito de:
+    a. Confirmar a existência de tratamento dos seus dados.
+    b. Acessar seus dados.
+    c. Corrigir dados incompletos, inexatos ou desatualizados.
+    d. Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD.
+    e. Solicitar a portabilidade dos seus dados a outro fornecedor.
+    f. Obter informação sobre as entidades públicas e privadas com as quais o controlador realizou uso compartilhado de dados.
+    g. Revogar seu consentimento, a qualquer momento.
+
+**5. Segurança e Retenção dos Dados:**
+Adotamos medidas técnicas e administrativas para proteger seus dados. Eles serão mantidos apenas pelo tempo necessário para cumprir as finalidades para as quais foram coletados, ou para cumprimento de obrigações legais.
+
+**6. Termos de Uso:**
+Ao usar a PetMatch, você se compromete a:
+    a. Fornecer informações verdadeiras, precisas e atualizadas.
+    b. Não utilizar a plataforma para fins ilícitos ou que violem os direitos de terceiros.
+    c. Manter a confidencialidade dos seus dados de acesso, se aplicável.
+A PetMatch se reserva o direito de suspender ou cancelar contas que violem estes termos.
+
+**7. Alterações:**
+Esta Política e Termos podem ser atualizados. Notificaremos sobre mudanças significativas.
+
+Ao marcar a caixa "Eu concordo com os termos", você declara que leu e concorda integralmente com esta Política de Privacidade e Termos de Uso.</textarea>
+
+
+          <label><input type="checkbox" /> Eu concordo com os termos</label>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit">Enviar cadastro</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p><a href="#">Sobre</a> | <a href="#">Política de Privacidade</a></p>
+  </footer>
+</body>
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const fotoOngInput = document.getElementById('fotoOngInput');
+    const imagePreview = document.getElementById('imagePreview');
+    const fileUploadVisual = document.querySelector('.file-upload-visual');
+    const removeImageButton = document.getElementById('removeImageButton'); 
+
+    fotoOngInput.addEventListener('change', function (event) {
+      const file = event.target.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          imagePreview.src = e.target.result;
+          imagePreview.style.display = 'block';
+          if (fileUploadVisual) {
+            fileUploadVisual.style.display = 'none';
+          }
+          removeImageButton.style.display = 'block'; 
+        }
+        reader.readAsDataURL(file);
+      } else {
+        clearImagePreviewAndInput();
+      }
+    });
+
+    removeImageButton.addEventListener('click', function () {
+      clearImagePreviewAndInput();
+    });
+
+    function clearImagePreviewAndInput() {
+      imagePreview.src = '#';
+      imagePreview.style.display = 'none';
+      if (fileUploadVisual) {
+        fileUploadVisual.style.display = 'flex';
+      }
+      removeImageButton.style.display = 'none';
+
+      fotoOngInput.value = '';
+    }
+  });
+
+  // Mascara CNPJ
+  document.addEventListener('DOMContentLoaded', function () {
+    const cnpjInput = document.getElementById('cnpjInput');
+
+    if (cnpjInput) {
+      cnpjInput.addEventListener('input', function (e) {
+        let value = e.target.value;
+        value = value.replace(/\D/g, '');
+        value = value.substring(0, 14);
+        // Adiciona o primeiro ponto (ex: 12 -> 12, 123 -> 12.3)
+        value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+        // Adiciona o segundo ponto (ex: 12.345 -> 12.345, 12.3456 -> 12.345.6)
+        value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+        // Adiciona a barra (ex: 12.345.678 -> 12.345.678, 12.345.6789 -> 12.345.678/9)
+        value = value.replace(/^(\d{2})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3/$4');
+        value = value.replace(/^(\d{2})\.(\d{3})\.(\d{3})\/(\d{4})(\d{1,2})$/, '$1.$2.$3/$4-$5');
+        e.target.value = value;
+      });
+    }
+  });
+
+</script>
+<script src="../active-menu.js"></script>
+
+</html>

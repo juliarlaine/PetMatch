@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetMatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylepetmatch.css" />
+  <style>
+    .menu-link-active {
+      color: #888 !important;
+      cursor: default !important;
+      text-decoration: none !important;
+      pointer-events: none;
+    }
+    .menu-link-active:hover {
+      color: #888 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <img src="imagemdefundo.jpg" alt="Imagem de fundo" />
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="../home definitiva/home.html">
+          <img src="LOGO 4.png" alt="PetMatch" />
+        </a>
+      </div>
+        <nav class="menu">
+            <div class="menu-links">
+  <a href="catalogo.html">Quero adotar</a>
+  <div class="dropdown">
+    <a href="#" class="menu-link">Quero ajudar</a>
+    <div class="dropdown-content">
+      <a href="../cadastroOng/cadastroong.html">Cadastrar uma Ong</a>
+      <a href="../cadastroVoluntario/cadastrovoluntario.html">Me voluntariar</a>
+    </div>
+  </div>
+  <a href="../blog/blog.html">Blog</a>
+  <a href="../pagina protetores/protetores.html">Protetores</a>
+
+</div>
+
+          <a class="Entrar menu-link-active" href="login.html">Entrar</a>
+        <a class="btn-cadastro" href="cadastro.html">Cadastre-se</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <form class="login-card">
+      <a href="../home definitiva/home.html">
+        <img class="login-logo" src="LOGO 4.png" alt="PetMatch logo" />
+      </a>
+      <h2>Login:</h2>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Digite seu email" required />
+  
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" placeholder="Digite sua senha" required />
+  
+      <div class="login-links">
+        <a class="esqueci-senha" href="../confirmacaoEmail/confirmacaoemail.html">Esqueci minha senha</a>
+        <a href="../home definitiva/home.html" class="voltar-home">Voltar para home</a>
+      </div>
+  
+      <button class="btn-continuar" type="submit">Continuar</button>
+    </form>
+  </main>
+<script src="scripit.js"></script>
+<script src="../active-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* ===================== RESET ===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0eee6;
+  color: #4d4d4c;
+}
+
+/* ===================== HEADER ===================== */
+/* HEADER */
+header {
+  font-family: "Orelega One", serif;
+  width: 100%;
+  background-color: #f2f2eb;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 70px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.menu-links a,
+a.Entrar {
+  color: #693421;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Orelega One", serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a.Entrar {
+  margin-right: 10px;
+}
+
+a.Entrar:hover,
+.menu-links a:hover {
+  color: #54a09a;
+  transform: scale(1.05);
+}
+
+.btn-cadastro {
+  background-color: #54a09a;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Orelega One", serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cadastro:hover {
+  background-color: #3c7e7a;
+  transform: scale(1.05);
+}
+
+.login-logo {
+  display: block;
+  margin: 0 0 20px auto;
+  transform: translateX(165px); 
+  height: 75px;
+}
+
+/* ===================== MAIN CONTENT ===================== */
+.ongs-container {
+  max-width: calc(100% - 480px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.intro {
+  background-color: rgba(84, 160, 154, 0.6);
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 1000px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card {
+  background-color: #f5f5f5;
+  width: 286px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #54a09a;
+  font-family: 'Orelega One', serif;
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+.btn-localizacao {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Orelega One', serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-localizacao img {
+  width: 16px;
+  height: 16px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background-color: #fe9e25;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Link principal */
+.menu-link {
+  color: #693421;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Orelega One", serif;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Caixa oculta com os itens */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+  padding: 10px 0;
+}
+
+/* Cada link interno */
+.dropdown-content a {
+  color: #693421;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-family: "Orelega One", serif;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0eee6;
+}
+
+/* Mostra o dropdown quando passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

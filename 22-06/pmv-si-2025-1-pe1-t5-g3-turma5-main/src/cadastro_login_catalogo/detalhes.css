@@ -1,0 +1,185 @@
+<<<<<<< HEAD
+/* detalhes.css */
+
+/* ========= Reset / Base ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f2eb;
+  font-family: 'Assistant', sans-serif;
+  color: #333;
+}
+
+/* ========= Container Geral ========= */
+.detalhes-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* ========= Conteúdo Flexível ========= */
+.detalhes-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Imagem do pet */
+.detalhes-img {
+  flex: 1 1 300px;
+}
+.detalhes-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Informações do pet */
+.detalhes-info {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detalhes-info h1 {
+  font-family: "Orelega One", serif;
+  font-size: 2.5rem;
+  color: #48221a;
+  margin-bottom: 1rem;
+}
+.detalhes-info p {
+  margin-bottom: .75rem;
+  line-height: 1.5;
+}
+.detalhes-info p strong {
+  color: #693421;
+}
+
+/* ========= Botão “Voltar” ========= */
+.voltar {
+  display: inline-block;
+  margin: 0 2rem 2rem;
+  padding: .6rem 1.2rem;
+  background-color: #54a09a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color .3s ease;
+}
+.voltar:hover {
+  background-color: #3c7e7a;
+}
+
+/* ========= Responsividade ========= */
+@media (max-width: 768px) {
+  .detalhes-content {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .detalhes-info h1 {
+    font-size: 2rem;
+  }
+}
+=======
+/* detalhes.css */
+
+/* ========= Reset / Base ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f2f2eb;
+  font-family: 'Assistant', sans-serif;
+  color: #333;
+}
+
+/* ========= Container Geral ========= */
+.detalhes-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* ========= Conteúdo Flexível ========= */
+.detalhes-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Imagem do pet */
+.detalhes-img {
+  flex: 1 1 300px;
+}
+.detalhes-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Informações do pet */
+.detalhes-info {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detalhes-info h1 {
+  font-family: "Orelega One", serif;
+  font-size: 2.5rem;
+  color: #48221a;
+  margin-bottom: 1rem;
+}
+.detalhes-info p {
+  margin-bottom: .75rem;
+  line-height: 1.5;
+}
+.detalhes-info p strong {
+  color: #693421;
+}
+
+/* ========= Botão “Voltar” ========= */
+.voltar {
+  display: inline-block;
+  margin: 0 2rem 2rem;
+  padding: .6rem 1.2rem;
+  background-color: #54a09a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color .3s ease;
+}
+.voltar:hover {
+  background-color: #3c7e7a;
+}
+
+/* ========= Responsividade ========= */
+@media (max-width: 768px) {
+  .detalhes-content {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .detalhes-info h1 {
+    font-size: 2rem;
+  }
+}
+>>>>>>> 515cf08b56cab39abeecb6aac762c3fb5bd8b37a
